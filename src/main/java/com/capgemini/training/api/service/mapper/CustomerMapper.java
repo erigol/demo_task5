@@ -7,6 +7,7 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class CustomerMapper {
 
+   // updateEntityFromRequest
   public CustomerEntity toEntity(CustomerDetails dto) {
     return CustomerEntity.builder()
         .customerId(dto.getCustomerId())
@@ -21,6 +22,7 @@ public class CustomerMapper {
         .build();
   }
 
+  //toCustomerDetails
   public CustomerDetails toDto(CustomerEntity user) {
     return CustomerDetails.builder()
         .customerId(user.getCustomerId())
