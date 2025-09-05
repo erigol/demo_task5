@@ -21,7 +21,7 @@ public class CustomerDetailsService {
   }
 
   public CustomerEntity findById_2(String userId) {
-    return userRepository.findById(userId).orElse(null);
+      return userRepository.findById(userId).orElse(null);
   }
 }
 

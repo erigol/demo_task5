@@ -29,7 +29,7 @@ public class CustomerDetailsController {
   @GetMapping(path = "/ping")
   public String pingMe() {
     try {
-      return "ping UserGetController";
+      return "ping UserGetController. It is working.";
     } catch (Exception e) {
       return e.getMessage();
     }
@@ -79,7 +79,7 @@ public class CustomerDetailsController {
   
   
   // Notas temporales:
-  // lo original antes de ponerlo e orlseGet
+  // lo original antes de poner  orElseGet
   // void findById(...) {
   // Optional<CustomerEntity> optData = userService.findById(userId);
   //  if(optData.isPresent())
@@ -88,8 +88,8 @@ public class CustomerDetailsController {
   //   return ResponseEntity.notFound().build();
 
   // before adding ResponseEntity
-  // public CustomerDetails findById(@PathVariable(name = "userId") @NotBlank String
-  // userId){
+  // public CustomerDetails findById(@PathVariable(name = "userId")
+    //                               @NotBlank String userId){
   //  return ResponseEntity.ok(CustomerMapper.toDto(userService.getReferenceById(userId)));
   // }
 }
